@@ -1,0 +1,7 @@
+POST http://localhost:7000/sign HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlciI6IjExMDYzMDg2NTAiLCJwYXNzd29yZCI6IiQyYSQwNSRlQTdGbDJ4Z2QxVFl6M2JCdy9Td09lZmRkMnVOb2taVnJQMEV5NkVoSjJXbFFXdDdGZEJQSyIsImlhdCI6MTY4MDAzNzQ2OSwiZXhwIjoxNjgwMTIzODY5fQ.ldsVeC_a_Pjo299dkyNRhYwJcuxOx-nKIamIIdbyZVc
+
+{
+    "user":"1106308650",
+    "password":"1106308650"
+}
