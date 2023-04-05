@@ -2,8 +2,11 @@ import { Router } from "express";
 const router = Router();
 
 //CONTROLADORES
+//LOGIN
 import { loginCtrl } from '../controller/login/login-controller.js'
 import { authCtrl } from '../controller/auth/auth-controller.js'
+//RECOVERY PASSWORD
+import { recoveryPasswordCtrl } from '../controller/recoveryPassword/recoverypassword-controller.js'
 //MIDDLEWARE
 import { middleware } from '../controller/login/seguridad.js'
 router.use(function(req, res, next) {
@@ -20,7 +23,7 @@ router.post("/authLogin",authCtrl.login)
 router.post("/sign",middleware,loginCtrl.login)
 router.post("/",middleware,loginCtrl.login)
 //REESTABLECER CONTRASEÑA
-
+router.post("/",middleware,loginCtrl.login)
 //VALIDAR HOJA DE VIDA
 
 
