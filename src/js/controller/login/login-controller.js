@@ -7,8 +7,10 @@ const tabla = "control_acceso";
 
 loginCtrl.login = async(req, res, next) => {
     try{
-        const items = await one(tabla,"1106308650");
-        console.log(items)
+        // console.log(req.body.user)
+        // const items = await one(tabla,"1106308650");
+        const items = await one(tabla,req.body.user);
+        // console.log(items)
         sucess(req,res,items,200);
     }
     catch(err){

@@ -29,6 +29,8 @@ function obtenerToken(autorizacion){
 
 
 function decodificarCabecera(req){
+    // console.log("Token")
+    // console.log(req.headers)
     const autorizacion = req.headers.authorization || '';
     const token = obtenerToken(autorizacion);
     const decodificado = verificarToken(token);

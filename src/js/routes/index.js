@@ -23,7 +23,7 @@ router.post("/authLogin",authCtrl.login)
 router.post("/sign",middleware,loginCtrl.login)
 router.post("/",middleware,loginCtrl.login)
 //REESTABLECER CONTRASEÑA
-router.post("/",middleware,loginCtrl.login)
+router.post("/searchRecovery",recoveryPasswordCtrl.SearchRecovery)
 //VALIDAR HOJA DE VIDA
 
 
